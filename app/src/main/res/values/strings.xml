@@ -1,0 +1,46 @@
+<resources>
+    <string name="welcome">Вы в "Системе"</string>
+    <string name="app_name">СИСТЕМА</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="about">О нас</string>
+    <string name="history">Новости Системы</string>
+    <string name="aboutus">⊙_ರೃ Вы в СиСтЕмЕ (͡๏̯͡๏)\n Это ваш лучший новостной портал. Найти автора можно в следующих соц. сетях:</string>
+    <string name="login">Войти</string>
+    <string name="donate">Donate</string>
+    <string name="message">Message</string>
+    <string name="create_new">Нет аккаунта? Создать</string>
+    <string name="not_register">Есть аккаунт? Войти</string>
+    <string name="name">Имя</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="name_error">Пожалуйста, введите имя</string>
+    <string name="phone_error">Пожалуйста, введите номер телефона</string>
+    <string name="email_error">Пожалуйста, введите адресс</string>
+    <string name="error_invalid_email">Email неверный</string>
+    <string name="password_error">Пожалуйста, введите пароль</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+
+    <string name="donor_name">Donor Name</string>
+    <string name="food_name">Food Items</string>
+    <string name="description">Текст статьи</string>
+    <string name="submit">Submit</string>
+
+    <string name="foodmap">Food Map</string>
+    <string name="mypin">My Pins</string>
+
+    <string name="receiver_name">Название статьи</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="delete">Удалить</string>
+</resources>
+
