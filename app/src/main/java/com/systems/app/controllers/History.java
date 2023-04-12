@@ -1,16 +1,16 @@
-package com.systems.app;
+package com.systems.app.controllers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.systems.app.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -24,15 +24,21 @@ public class History extends AppCompatActivity {
     public static final String TAG = "TAG";
     private TextView textViewData;
     FirebaseAuth fAuth;
-
+    Button deleteButton;
+    com.systems.app.service.myadapter myadapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
         fAuth= FirebaseAuth.getInstance();
         textViewData=findViewById(R.id.data);
+        deleteButton=findViewById(R.id.delete);
 
         loadNotes();
+
+
+        deleteButton.setOnClickListener(v -> System.out.println("View: "+v));
+        deleteButton.setOnClickListener(v -> myadapter.deleteItem(v.getId()));
     }
 
     public void loadNotes() {
@@ -51,14 +57,14 @@ public class History extends AppCompatActivity {
                                     String description = (String) document.get("description");
                                     String Userid = (String) document.get("userid");
                                     String userID = fAuth.getCurrentUser().getUid();
-                                    Timestamp ts = (Timestamp) document.get("timestamp");
+//                                    Timestamp ts = (Timestamp) document.get("timestamp");
                                     //String dateandtime=String.valueOf(ts);
-                                    String dateandtime=String.valueOf(ts.toDate());
+//                                    String dateandtime=String.valueOf(ts.toDate());
                                     //String dateandtime = ts.toString();
 
                                     if(Userid.equals(userID)) {
-                                        data += "Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\nDate & Time: " + dateandtime + "\n\n";
-                                        //data += "Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\n";
+//                                        data += "Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\nDate & Time: " + dateandtime + "\n\n";
+                                        data += "Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\n";
                                     }
                                     textViewData.setText(data);
                                 }

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/font"
-    tools:context="com.systems.app.Donate">
+    tools:context="com.systems.app.controllers.Donate">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

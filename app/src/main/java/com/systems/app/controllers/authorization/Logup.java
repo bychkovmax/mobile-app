@@ -1,4 +1,4 @@
-package com.systems.app;
+package com.systems.app.controllers.authorization;
 
 
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.systems.app.controllers.MainActivity;
 import com.systems.app.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

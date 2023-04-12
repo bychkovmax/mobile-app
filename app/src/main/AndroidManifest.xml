@@ -19,22 +19,22 @@
         android:theme="@style/Theme.AAHAARAPP"
         tools:ignore="AllowBackup">
         <activity android:name="com.systems.app.UserdataActivity"></activity>
-        <activity android:name="com.systems.app.History" />
-        <activity android:name="com.systems.app.About" />
+        <activity android:name="com.systems.app.controllers.History" />
+        <activity android:name="com.systems.app.controllers.About" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBtAubRGSlTZanGLTPT3JrKWsRCFAXZzrE" />
 
-        <activity android:name="com.systems.app.Receive" />
-        <activity android:name="com.systems.app.Contact" />
-        <activity android:name="com.systems.app.Signup" />
-        <activity android:name="com.systems.app.Logup" />
-        <activity android:name="com.systems.app.MainActivity" />
-        <activity android:name="com.systems.app.Donate" />
-        <activity android:name="com.systems.app.landingpage" />
+        <activity android:name="com.systems.app.controllers.Receive" />
+        <activity android:name="com.systems.app.controllers.Contact" />
+        <activity android:name="com.systems.app.controllers.authorization.Signup" />
+        <activity android:name="com.systems.app.controllers.authorization.Logup" />
+        <activity android:name="com.systems.app.controllers.MainActivity" />
+        <activity android:name="com.systems.app.controllers.Donate" />
+        <activity android:name="com.systems.app.controllers.landingpage" />
         <activity
-            android:name="com.systems.app.SplashScreen"
+            android:name="com.systems.app.controllers.SplashScreen"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

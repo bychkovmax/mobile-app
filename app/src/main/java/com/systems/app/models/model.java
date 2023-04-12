@@ -1,4 +1,4 @@
-package com.systems.app;
+package com.systems.app.models;
 
 public class model {
     String name,type,description,userid;
