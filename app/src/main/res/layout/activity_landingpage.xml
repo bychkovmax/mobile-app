@@ -35,7 +35,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/donate"
+                        android:src="@drawable/login"
                         android:layout_marginTop="18dp"
                         android:layout_gravity="center_horizontal"
                         tools:ignore="ContentDescription" />
