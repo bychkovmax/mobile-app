@@ -1,13 +1,16 @@
 package com.systems.app.models;
 
-public class model {
+import androidx.room.Entity;
+
+@Entity
+public class News {
     String name,type,description,userid;
 
-    public model() {
+    public News() {
 
     }
 
-    public model(String name, String type, String description, String userid) {
+    public News(String name, String type, String description, String userid) {
         this.name = name;
         this.type = type;
         this.description = description;

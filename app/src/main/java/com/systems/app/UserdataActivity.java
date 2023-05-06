@@ -12,8 +12,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.systems.app.R;
-import com.systems.app.models.model;
+import com.systems.app.models.News;
 import com.systems.app.service.myadapter;
 
 import java.util.ArrayList;
@@ -22,7 +21,7 @@ import java.util.List;
 public class UserdataActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    ArrayList<model> datalist;
+    ArrayList<News> datalist;
     FirebaseFirestore db;
     myadapter adapter;
     FirebaseAuth fAuth= FirebaseAuth.getInstance();
@@ -47,7 +46,7 @@ public class UserdataActivity extends AppCompatActivity {
                         List<DocumentSnapshot> list=queryDocumentSnapshots.getDocuments();
                         for(DocumentSnapshot d:list)
                         {
-                            model obj=d.toObject(model.class);
+                            News obj=d.toObject(News.class);
                             //datalist.add(obj);
                             String Userid = (String) d.get("userid");
                             if(Userid.equals(userID)) {

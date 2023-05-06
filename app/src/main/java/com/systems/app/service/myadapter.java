@@ -12,19 +12,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.systems.app.R;
-import com.systems.app.models.model;
+import com.systems.app.models.News;
 
 import java.util.ArrayList;
 
 public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
 {
-    ArrayList<model> datalist;
+    ArrayList<News> datalist;
     FirebaseAuth fAuth= FirebaseAuth.getInstance();
     public String userID = fAuth.getCurrentUser().getUid();
     public String uid;
 
 
-    public myadapter(ArrayList<model> datalist) {
+    public myadapter(ArrayList<News> datalist) {
         this.datalist = datalist;
     }
 

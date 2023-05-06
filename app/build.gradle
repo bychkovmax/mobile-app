@@ -55,6 +55,8 @@ dependencies {
     implementation 'com.firebase:geofire-java:3.0.0'
     implementation 'com.koalap:geofirestore-android:1.2.2'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    implementation 'android.arch.persistence.room:runtime:1.1.0'
+    implementation 'org.postgresql:postgresql:42.2.5'
 
     //cardview libraries
     implementation 'androidx.cardview:cardview:1.0.0'

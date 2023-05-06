@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: "postgres:14"
+    command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
+    container_name: "android_db"
+    volumes:
+      - "./db/postgresql-data:/var/lib/postgresql/data/:rw"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+    env_file: .env
+    restart: always
+    ports:
+      - "6666:5432"
