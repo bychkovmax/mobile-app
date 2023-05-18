@@ -45,10 +45,10 @@ Postgres 14
 docker-compose up --build -d db
 ```
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=User Iterface)](app/src/main/res/drawable/UI.png)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=User+Iterface)](app/src/main/res/drawable/UI.png)
 
 ![](app/src/main/res/drawable/UI.png)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=User Iterface Gif)](app/src/main/res/drawable/demo.gif)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=User+Iterface+Gif)](app/src/main/res/drawable/demo.gif)
 
 ![](app/src/main/res/drawable/demo.gif)
